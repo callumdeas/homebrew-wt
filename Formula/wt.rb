@@ -8,8 +8,9 @@ class Wt < Formula
     depends_on "node"
 
     def install
-        system "npm", "install", "--prefix", libexec, "--production"
-        bin.install_symlink Dir["#{libexec}/bin/*"]
+        system "npm", "install", "--omit=dev"
+        libexec.install Dir["*"]
+        bin.install_symlink libexec/"dist/cli.js" => "wt"
     end
 
     test do
