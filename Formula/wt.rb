@@ -1,8 +1,8 @@
 class Wt < Formula
     desc "Git worktree manager for bare-repo workflows"
     homepage "https://github.com/CallumDeas/wt"
-    url "https://registry.npmjs.org/doubleut/-/doubleut-0.3.1.tgz"
-    sha256 "8938491bca2e85729ee558403de4fa0b074e39ef67be178d6a411bf481acf887"
+    url "https://registry.npmjs.org/doubleut/-/doubleut-0.3.2.tgz"
+    sha256 "cf4a129d7cb4a08f5a322b5270f5cefd826e8e8ce69efb77b4ad8babcb1ccb59"
     license "MIT"
 
     depends_on "node"
