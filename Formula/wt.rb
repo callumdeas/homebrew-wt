@@ -10,6 +10,7 @@ class Wt < Formula
     def install
         system "npm", "install", "--omit=dev", "--ignore-scripts"
         libexec.install Dir["*"]
+        chmod 0755, libexec/"dist/cli.js"
         bin.install_symlink libexec/"dist/cli.js" => "wt"
     end
 
